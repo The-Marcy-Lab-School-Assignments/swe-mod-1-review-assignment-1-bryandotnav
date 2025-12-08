@@ -1,5 +1,10 @@
 const extractHashtags = (post) => {
   // Your code here
+  let hashes = []
+  let none = [];
+  for(let i = 0; i < post.length; i++) {
+  }
+  return hashes;
 }
 
 console.log(extractHashtags("Love this #coding bootcamp! #javascript #WebDev"));

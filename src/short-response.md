@@ -1,6 +1,7 @@
 # Short Responses
 
 For this short response assignment, aim to write a response with the following qualities (your instructor will give you feedback on these areas):
+
 - [] Addresses all parts of the prompt
 - [] Accurately uses relevant technical terminology
 - [] Is free of grammar and spelling mistakes (double check with grammarly!)
@@ -16,12 +17,13 @@ Using the code block below, explain what it means for a function call to be an "
 ```js
 const double = (num) => {
   return num * 2;
-}
+};
 
 const result = double(5);
 ```
 
 In your response, make sure to cover the following details:
+
 1. Explain what an "expression" is.
 2. Explain how it is determined what value a function call will resolve/evaluate to.
 3. Explain why function calls sometimes resolve/evaluate to `undefined`.
@@ -34,7 +36,7 @@ Your response...
 
 ## Prompt 2
 
-Analyze the following code. Then, fill in the template below with the callstack and the values of all variables at the moment when the `getFirstLetter()` function has just been called *for the first time* but has NOT yet returned.
+Analyze the following code. Then, fill in the template below with the callstack and the values of all variables at the moment when the `getFirstLetter()` function has just been called _for the first time_ but has NOT yet returned.
 
 ```js
 const buildProfile = (firstName, lastName, age) => {
@@ -42,23 +44,23 @@ const buildProfile = (firstName, lastName, age) => {
   const initials = extractInitials(firstName, lastName);
   const bio = `${fullName} (${initials}) - Age: ${age}`;
   return bio;
-}
+};
 
 const createFullName = (first, last) => {
   const fullName = first + " " + last;
   return fullName;
-}
+};
 
 const extractInitials = (first, last) => {
   const firstInitial = getFirstLetter(first); // <--- we're in this function call
   const lastInitial = getFirstLetter(last);
   return firstInitial + lastInitial;
-}
+};
 
 const getFirstLetter = (name) => {
   // ***draw the callstack at this moment before the return***
   return name[0].toUpperCase();
-}
+};
 
 const userProfile = buildProfile("reuben", "ogbonna", 24);
 console.log(userProfile); // reuben ogbonna (RO) - Age: 24
@@ -125,7 +127,7 @@ let count = 0;
 
 const incrementA = () => {
   count = count + 1;
-}
+};
 
 incrementA();
 console.log(count);
@@ -139,7 +141,7 @@ let count = 0;
 const incrementB = () => {
   let count = 0;
   count = count + 1;
-}
+};
 
 incrementB();
 console.log(count);
@@ -183,9 +185,9 @@ Label the basic array methods below with a 1-sentence description of what they d
 
 ### Response 5
 
-- `push(value)` - ???
-- `pop()` - ???
-- `shift()` - ???
-- `unshift(value)` - ???
-- `splice(index, deleteCount)` - ???
-- `slice(start, end)` - ???
+- `push(value)` - adds imputted value into the end of an array (mutating)
+- `pop()` - removes the last element of an array (mutating)
+- `shift()` - removes the first element of an array (mutating)
+- `unshift(value)` - adds imputted value to the start of an array (mutating)
+- `splice(index, deleteCount)` - can change the contents of an array by adding and removing elements based off imput (mutating)
+- `slice(start, end)` - creates a shallow copy of an array with elements removed based on imput (non-mutating)
