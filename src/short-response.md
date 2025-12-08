@@ -30,7 +30,7 @@ In your response, make sure to cover the following details:
 
 ### Response 1
 
-Your response...
+An **expression** is the result of code that resolves to a value such as `num * 2` in the example above. Its determined what value a function call will resolve to based on what is in the `return` keyword. The return keyword will always determine what value will come out of the function. Sometimes function calls resolve to undefined because by default if there is no value to be returned, a return keyword or even the function itself will produce undefined.
 
 ---
 
@@ -78,7 +78,7 @@ console.log(userProfile); // reuben ogbonna (RO) - Age: 24
 ```
 Callstack: (recent calls at the top)
 ---------------------------
-[           ]
+[    getFirstNameLetter(name)       ]
 [           ]
 [           ]
 [           ]
@@ -149,7 +149,7 @@ console.log(count);
 
 ### Response 3
 
-Your response...
+Example A references the count variable in the global scope and adds one to it as seen on line 129 making the output 1 meanwhile in example B there is `let count = 0` in the block scope of the function so it will use that count variable and the output WOULD be 1, only that count is also declared in the global scope, where the console.log is so the actual output would be 0.
 
 ---
 
@@ -175,7 +175,7 @@ Which approach would you choose and why? In your answer, identify at least one p
 
 ### Response 4
 
-Your response...
+Approach A would be the best path to take because Approach B is less efficient by taking up more space by having a new array, also if there are two students with the same name it would remove both students rather than approach A that just removes the first occurence, the only downside is that it needs a guard clause in case the name to be removed doesn't exist in the array
 
 ---
 
