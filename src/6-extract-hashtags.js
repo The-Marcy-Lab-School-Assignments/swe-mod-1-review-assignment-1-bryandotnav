@@ -1,5 +1,11 @@
 const extractHashtags = (post) => {
   // Your code here
+  const hashtags = post.split(' ').filter(word => word.startsWith('#'));
+  if(hashtags.length) {
+    return hashtags 
+  } else {
+    return "No hashtags here"
+  }
 }
 
 console.log(extractHashtags("Love this #coding bootcamp! #javascript #WebDev"));
