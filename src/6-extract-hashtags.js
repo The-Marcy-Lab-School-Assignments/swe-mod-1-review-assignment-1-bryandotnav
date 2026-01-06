@@ -1,8 +1,10 @@
 const extractHashtags = (post) => {
   // Your code here
-  let hashtag = []
-  for (let i = 0; i < post.length; i++) {
-
+  const hashtags = post.split(' ').filter(word => word.startsWith('#'));
+  if(hashtags.length) {
+    return hashtags 
+  } else {
+    return "No hashtags here"
   }
 }
 
